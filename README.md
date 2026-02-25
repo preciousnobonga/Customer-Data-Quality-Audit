@@ -1,9 +1,3 @@
-
----
-
-# 2️⃣ Customer-Data-Quality-Audit
-
-```markdown
 # Customer Data Quality Audit
 
 ## Business Context
