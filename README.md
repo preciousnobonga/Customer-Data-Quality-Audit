@@ -1,29 +1,55 @@
-Movie Correlation Portfolio Project
 
-This project analyzes the correlation between various attributes of movies, such as budget, gross earnings, and rating scores. 
+---
 
-Using a dataset of movies, the project aims to uncover trends and relationships between these factors.
+# 2️⃣ Customer-Data-Quality-Audit
 
-Key Features:
+```markdown
+# Customer Data Quality Audit
 
-Data Cleaning: Handling missing values and converting data types.
+## Business Context
+Poor data quality leads to inaccurate reporting, flawed analysis, and incorrect business decisions — especially in finance and customer analytics environments.
 
-Visualization: Scatter plots and correlation matrices to explore relationships.
+## Problem Statement
+Conduct a comprehensive data quality assessment on a customer dataset to evaluate reliability, completeness, and consistency.
 
-Correlation Analysis: Calculate and interpret correlations between numeric columns.
+## Dataset Overview
+- Customer demographic data
+- Account activity data
+- Financial indicators
+- Unique identifiers
 
+## Tools Used
+- SQL Server
+- Python (Pandas)
+- Excel (validation checks)
 
-Technologies:
+## Data Quality Checks Performed
+- Missing value analysis
+- Duplicate record detection
+- Outlier identification
+- Invalid format detection (emails, IDs)
+- Data type validation
+- Referential integrity checks
 
-Python (Pandas, Seaborn, Matplotlib)
+## Key Findings
+- Missing values in income and tenure fields impacted risk segmentation.
+- Duplicate customer IDs created reporting inconsistencies.
+- Extreme outliers skewed average revenue metrics.
+- Inconsistent formatting in categorical fields affected grouping accuracy.
 
-Jupyter Notebook / VS Code
+## Business Impact
+- Incorrect churn prediction
+- Misclassification of financial risk
+- Inaccurate KPI reporting
 
+## Recommendations
+- Implement database constraints.
+- Introduce validation rules during data entry.
+- Schedule automated data quality monitoring.
+- Standardize categorical value formats.
 
-Usage:
-
-Clone the repository.
-
-Install dependencies: pip install -r requirements.txt
-
-Run the notebook or script to generate visualizations and analysis.
+## Project Structure
+sql/ – Data validation queries
+python/ – Data profiling scripts
+reports/ – Summary findings
+README.md
